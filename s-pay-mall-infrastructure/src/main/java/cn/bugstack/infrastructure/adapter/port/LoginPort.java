@@ -44,7 +44,7 @@ public class LoginPort implements ILoginPort {
 
         // 2. 生成 ticket
         WeixinQrCodeRequestDTO request = WeixinQrCodeRequestDTO.builder()
-                .expire_seconds(2592000) // 过期时间单位为秒 2592000 = 30天
+                .expire_seconds(2592000) // 过期时间单位为秒 2592000 = 30天111
                 .action_name(WeixinQrCodeRequestDTO.ActionNameTypeVO.QR_SCENE.getCode())
                 .action_info(WeixinQrCodeRequestDTO.ActionInfo.builder()
                         .scene(WeixinQrCodeRequestDTO.ActionInfo.Scene.builder()
